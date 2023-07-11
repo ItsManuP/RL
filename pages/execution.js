@@ -76,14 +76,14 @@ const Fetchando = () => {
     
     
     <div id="list_housing" class="">
-                       
+                       <h1 class="text-center lg:text-4xl mt-5"> Annunci della settimana:</h1>
       {data && Array.isArray(data) ? (
         <ul class="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-4 ml-2 mr-2">
           {data.map((item, index) => (
-            <li key={index} class="h-auto max-w-full rounded-lg relative  ">
+            <li key={index} class="h-auto max-w-full rounded-lg relative hover:animate-pulse  ">
               <div>
-                <img src={item.image} alt={"foto"} class="rounded max-w-full h-3/4 " />
-                <div class="text-black rounded font-mono text-center text-xl bg-slate-100 ">
+                <img src={item.image} alt={"foto"} class="rounded h-72 w-full " />
+                <div class="text-black rounded font-mono text-center text-xl bg-slate-200 ">
                   {item.name.slice(0, 25)} <br />{item.monthlyPrice + "€"} </div>
                                                       
                 <br />
@@ -115,7 +115,7 @@ const Fetchando = () => {
         < div class="text-center">
       <button onClick={Avanti} class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded ">Avanti</button>
       <button onClick={Indietro} class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded ml-1">Indietro</button>
-      <p class="font-semibold text-center"> Sei alla pagina: {pageNumber} di {totalNumberPages - 1}</p>
+      <p class="font-semibold text-center"> Sei alla pagina: {pageNumber+1} di {totalNumberPages }</p>
         </div>      
      
   
