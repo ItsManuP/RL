@@ -76,7 +76,7 @@ const Fetchando = () => {
     
     
     <div id="list_housing" class="">
-                       <h1 class="text-center lg:text-4xl mt-5"> Annunci della settimana:</h1>
+                       <h1 class="text-center text-2xl lg:text-4xl mt-5"> Annunci della settimana:</h1>
       {data && Array.isArray(data) ? (
         <ul class="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-4 ml-2 mr-2">
           {data.map((item, index) => (

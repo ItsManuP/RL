@@ -75,7 +75,7 @@ const FilterPrice = () => {
           <button onClick={handleCustomRequest} class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ml-2  transition-opacity">Cerca</button>
         </div>
         <div>
-          <h1 class="xl:text-4xl text-center mt-4 mr-5"> Ecco alcuni risultati: </h1>
+          <h1 class="text-2xl lg:text-4xl text-center mt-4 mr-5"> Ecco alcuni risultati: </h1>
           {response && (
             
             <div class="grid grid-cols-1 ml-12 mr-12 gap-4 mt-4 sm:grid-cols-1  md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 max-w-full ">
